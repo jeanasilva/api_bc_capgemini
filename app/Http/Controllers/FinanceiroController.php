@@ -15,7 +15,7 @@ class FinanceiroController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());
+        Financeiro::create($request->all());
     }
 
     public function show($id)
